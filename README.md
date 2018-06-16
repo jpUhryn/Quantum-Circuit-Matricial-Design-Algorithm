@@ -33,6 +33,6 @@ This script test all the implemented gates in QCMD algorithm and compare the mat
 This script execute two kind of this gates (generate matrix and rowReverse) in a real quantum computer, and compares the results with the expected and theorical ones.
 
 
-#AUTHOR: 
+# AUTHOR: 
 Javier París Uhryn 
 Universidad Autonoma de Madrid, Escuela Politécnica Superior
