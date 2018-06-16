@@ -34,5 +34,5 @@ This script execute two kind of this gates (generate matrix and rowReverse) in a
 
 
 # AUTHOR: 
-Javier París Uhryn 
+Javier París Uhryn - 
 Universidad Autonoma de Madrid, Escuela Politécnica Superior
