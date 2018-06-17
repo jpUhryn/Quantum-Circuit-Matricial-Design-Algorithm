@@ -4,7 +4,7 @@ This program allows to probe empirically the use of the Quantum Circuit Matricia
 This algorithm generate an assembler file with the quantum circuit required that fixed with a given matrix as input.
 All the scripts to use (root directory and loadAsm directory) have a --help command to know the arguments required.
 
-## Use IBM-Q cuantum computer
+## Use IBM-Q quantum computer
 To use this program, it is needed the installation of the Python API QISKit. (https://github.com/QISKit/qiskit-tutorial/blob/master/INSTALL.md)
 
 Some of this scrips need a direct connection with the IBM quantum computer, and a login is required.
@@ -33,6 +33,9 @@ This script test all the implemented gates in QCMD algorithm and compare the mat
 This script execute two kind of this gates (generate matrix and rowReverse) in a real quantum computer, and compares the results with the expected and theorical ones.
 
 
-# AUTHOR: 
+## AUTHOR: 
 Javier París Uhryn - 
 Universidad Autonoma de Madrid, Escuela Politécnica Superior
+
+### Contact:
+For any doubt or issue, contact javier.parisu@estudiante.uam.es
