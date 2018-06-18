@@ -102,6 +102,8 @@ def probeMatrix(filename, nQubits, index, viewMatrix, compress):
 
     matrix1 = generateMatrix(filename, nQubits, index, compress)
 
+    res = 0
+
     try:
         qc = load_qasm_file(filename)
 
@@ -126,6 +128,8 @@ def probeMatrix(filename, nQubits, index, viewMatrix, compress):
     except QISKitError as ex:
 
         print ("EXCEPCION Error = {}".format(ex))
+
+    return res
 
 
 def probeAll(filename, nQubits, index, viewMatrix, compress):

@@ -88,7 +88,13 @@ def probeMatrix(filename, nQubits, rowReverse, index, viewMatrix, compress, shot
         expectedValues = {}
 
         for i in range(2**nQubits):
-            expectedValues["{0:02b}".format(i)] = np.absolute(matrix[i,0])**2
+            if nQubits == 2:
+                st = "{0:{fill}2b}".format(i, fill=0)
+            elif nQubits == 3:
+                st = "{0:{fill}3b}".format(i, fill=0)
+            else:
+                st = "{0:{fill}5b}".format(i, fill=0)
+            expectedValues[st] = np.absolute(matrix[i,0])**2
 
 
         print(Colors.PURPLE.value + "\n EXPECTED VALUES \n" + str(expectedValues) + "\n\n" + Colors.ENDC.value)
@@ -133,7 +139,12 @@ def probeMatrix(filename, nQubits, rowReverse, index, viewMatrix, compress, shot
         simuValuesArray = []
         realValuesArray = []
         for i in range(2**nQubits):
-            st = "{0:02b}".format(i)
+            if nQubits == 2:
+                st = "{0:{fill}2b}".format(i, fill=0)
+            elif nQubits == 3:
+                st = "{0:{fill}3b}".format(i, fill=0)
+            else:
+                st = "{0:{fill}5b}".format(i, fill=0)
             keys.append(st)
             
             if st in expectedValues.keys():
